@@ -5,8 +5,8 @@ use arduino_hal::Adc;
 use panic_halt as _;
 
 const LIGHT_THRESHOLD: u16 = 500;
-const SERVO_PULSE_BRIGHT_US: u32 = 2000; // ~180 degree (tune per servo)
-const SERVO_PULSE_DARK_US: u32 = 1000;   // ~0 degree (tune per servo)
+const SERVO_PULSE_BRIGHT_US: u32 = 2000; // Standard servo target angle A (~180deg)
+const SERVO_PULSE_DARK_US: u32 = 1000;   // Standard servo target angle B (~0deg)
 const SERVO_PERIOD_US: u32 = 20_000;     // 50Hz
 const SERVO_HOLD_CYCLES: u8 = 30;        // hold ~600ms
 
