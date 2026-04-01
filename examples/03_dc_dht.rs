@@ -110,7 +110,7 @@ fn main() -> ! {
                 dht_errors = 0;
                 ufmt::uwriteln!(&mut serial, "T={}C H={}%\r", temp, hum).ok();
 
-                if temp >= 35 {
+                if temp >= 30y {
                     // M3 forward: A=1, B=0
                     latch_state |= 1 << M3_A_BIT;
                     latch_state &= !(1 << M3_B_BIT);
