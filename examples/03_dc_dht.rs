@@ -1,6 +1,7 @@
 #![no_std]
 #![no_main]
 
+use core::fmt::Write;
 use panic_halt as _;
 use arduino_hal::simple_pwm::{IntoPwmPin, Prescaler, Timer0Pwm};
 use arduino_hal::port::{mode, Pin, PinOps};
